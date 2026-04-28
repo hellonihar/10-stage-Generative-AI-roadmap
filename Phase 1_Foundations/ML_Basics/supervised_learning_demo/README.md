@@ -1,1 +1,72 @@
-"# Supervised Learning Demo\n\nThis project demonstrates the fundamentals of Supervised Machine Learning using Python and scikit-learn. Specifically, it implements a K-Nearest Neighbors (KNN) classifier to predict the species of Iris flowers.\n\n## 🚀 Overview\n\nThe application performs the following steps:\n1.  **Load Data**: Uses the built-in Iris dataset.\n2.  **Split Data**: Divides the dataset into training and testing sets to ensure the model's performance can be measured on unseen data.\n3.  **Train Model**: Trains a KNN classifier using the training data.\n4.  **Evaluate**: Calculates the accuracy of the model on the test set.\n5.  **Predict**: Shows examples of predictions on the test set.\n\n## 🛠️ Setup and Execution\n\nBefore running the demo, you must install the required Python dependencies.\n\n**1. Install Dependencies:**\nRun the following command in your terminal in the `supervised_learning_demo/` directory:\n\n```bash\npip install -r requirements.txt\n```\n\n**2. Run the Demo:**\nOnce dependencies are installed, execute the main script:\n\n```bash\npython demo.py\n```\n\n## 🧠 Key Concepts Demonstrated\n\n*   **Supervised Learning**: Learning a mapping function ($f$) from input variables ($X$) to an output variable ($Y$) based on labeled example data ($\{(x_1, y_1), (x_2, y_2), \dots\}$).\n*   **Classification**: A type of supervised learning where the output variable ($Y$) is a category (e.g., 'setosa', 'versicolor', 'virginica').\n*   **Train/Test Split**: Essential practice to validate model performance and prevent overfitting."
+# 🧠 Supervised Learning Demo
+
+Welcome to the **Supervised Learning** demonstration module! This directory contains practical implementations of the two primary types of supervised learning: **Classification** and **Regression**.
+
+Supervised learning is the machine learning task of learning a function that maps an input to an output based on example input-output pairs.
+
+---
+
+## 🚀 Demos Included
+
+### 1. 🌸 Iris Species Classification (`demo.py`)
+This script demonstrates **Classification**. It uses the famous Iris dataset to train a model that can predict the species of a flower based on its physical measurements.
+*   **Algorithm**: K-Nearest Neighbors (KNN)
+*   **Goal**: Predict one of 3 species (Setosa, Versicolor, Virginica).
+*   **Key Metrics**: Accuracy Score.
+
+### 2. 🏠 House Price Prediction (`house_price_prediction.py`)
+This script demonstrates **Regression**. It generates synthetic data to model the relationship between house size (square footage) and its market price.
+*   **Algorithm**: Linear Regression
+*   **Goal**: Predict a continuous numerical value (Price).
+*   **Key Metrics**: Mean Absolute Error (MAE) and Visual Plotting.
+
+---
+
+## 🛠️ Setup and Installation
+
+Ensure you have Python installed, then follow these steps:
+
+**1. Clone the repository (if not already done)**
+**2. Navigate to this directory:**
+```bash
+cd "Phase 1_Foundations/ML_Basics/supervised_learning_demo"
+```
+
+**3. Install Dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🏃 How to Run
+
+### Run the Classification Demo:
+```bash
+python demo.py
+```
+
+### Run the Regression Demo:
+```bash
+python house_price_prediction.py
+```
+
+---
+
+## 🧠 Core Machine Learning Concepts
+
+This module covers several fundamental concepts essential for any AI engineer:
+
+*   **Labled Data**: The "ground truth" used to train the model.
+*   **Train/Test Split**: Dividing data into a **Training set** (to teach the model) and a **Test set** (to evaluate its performance on unseen data).
+*   **Classification vs. Regression**: 
+    *   *Classification* predicts a **category** (discrete).
+    *   *Regression* predicts a **quantity** (continuous).
+*   **Model Evaluation**: Using metrics like Accuracy and MAE to quantify how well the model is performing.
+
+---
+
+## 📊 Requirements
+*   `scikit-learn`: For ML models and datasets.
+*   `numpy`: For numerical operations.
+*   `matplotlib`: For data visualization.
